@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: purple;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#top-link-container {
+    display: flex;
+}
+
+.jobs-menu {
+    height: 170px;
+    background-color: #fff
+}
+
+.jobs-visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    /*height: 250px;*/
+    background-color: #EDF2F6;
+}
+
+.job-link-container {
+    height: 600px;
+    background-color: red;
+}
+
+.menu {
+    background-image: url("images/Menu-64.png");
+    border-right: .3px grey solid;
+}
+
+.menu, #search-field, #search-field-small-width, #setting, #account, #setting, #profile {
+    background-color: #fff;
+    background-size: 25px;
+}
+
+#search-field, #search-field-small-width {
+    flex: 1;
+    background-image: url("images/Search-50.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    border-top: .3px grey solid;
+    border-left: none;
+    border-right: none;
+    padding-left: 5px;
+    text-indent: 20px;
+}
+
+#search-field {
+    display: none;
+}
+
+#search-field-small-width {
+    height: 45px;
+    width: 100%;
+}
+
+.menu, #account, #setting, #profile {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#account {
+    background-image: url("images/User-Filled-50.png");
+    border-right: 1px grey solid;
+    border-left: 1px grey solid;
+}
+
+#setting {
+    background-image: url("images/Accounting-64.png");
+    border-right: 1px grey solid;
+}
+
+#profile {
+    background-image: url('images/Settings-Filled-50.png');
+    margin-right: 10px;
+}
+
+#job-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#job-classification {
+    padding: 25px 0px 10px 20px;
+}
+
+#job-title {
+    font-size: 26px;
+}
+
+#job-location {}
+
+#job-location-link {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#job-info-btn {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    margin:0px 30px}
+
+#open-btn, #bookmark-btn, #edit-btn, #home-btn, #jobs-visual-menu-drp-dn {
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    height: 40px;
+    border: 2px grey solid;
+    outline: none;
+}
+
+#bookmark-btn, #edit-btn, #home-btn {
+    border-radius: 100%;
+    width: 40px;
+}
+
+#open-btn {
+    background-image: url('images/Circled-Dot-48.png');
+    background-size: 20px;
+    font-size: 14px;
+    background-position: left center;
+    width: 100px;
+    border-radius: 40px
+}
+
+#bookmark-btn {
+    background-image: url('images/Bookmark-Ribbon-48.png');
+}
+
+#edit-btn {
+    background-image: url('images/Ball-Point-Pen-52.png')
+}
+
+#home-btn {
+    background-image: url('images/Library-48.png')
+}
+
+#jobs-visual-menu-drp-dn {
+    border-radius: 50px;
+    width: 100px;
+    margin: 5px 5px 3px 30px;
+     background-image: url('images/More-Filled-50.png');
+}
+
+#jobs-visual{
+  display: flex;
+  flex-direction: column;
+}
+
+#total-cir-graphs{
+display: flex;
+flex-direction: column;
+}
+
+#total-bar-graph{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cir-graph-cont{
+  display: flex;
+  flex-direction: column;
+}
+
+#graph1, #graph2, #graph3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: green solid 8px;
+  border-left: green solid 8px;
+  border-bottom:green solid 8px;
+  border-right:green solid 8px;
+  border-radius: 100%;
+  width: 150px;
+  height:150px;
+  text-align: center;
+  margin: 5px;
+}
+
+#graph2{
+  border-top: green solid 8px;
+  border-left: red solid 8px;
+  border-bottom:green solid 8px;
+  border-right:green solid 8px;
+}
+
+#graph3{
+  border-top: red solid 8px;
+  border-left: red solid 8px;
+  border-bottom:green solid 8px;
+  border-right:green solid 8px;
+}
+
+#cir-graph-info, #bar-graph-info{
+width:150px;
+height: 40px;
+  border-radius: 25px;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 8%;
+background-color: #FFF;
+margin: 5px;
+}
+
+#bar-graph{
+height:200px;
+width:300px;
+background-color:purple
+}
+
+#job-link-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+#job-info{
+  padding: 25px;
+  width:100%;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#job-info-header,
+#job-info-position,
+#job-info-type,
+#job-info-experience,
+#job-info-status,
+#job-info-lead,
+#job-info-salary{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  height:50px;
+  align-items: center;
+  background-color: green;
+
+}
+
+#job-info-position{
+  background-color: red;
+  height:50px;
+
+}
+
+#job-info-type{
+  background-color: blue;
+  height:50px;
+
+}
+
+#job-info-experience{
+  background-color: pink;
+  height:50px;
+
+}
+
+#job-info-status{
+  background-color: blue;
+  height:50px;
+
+}
+
+#job-info-description{
+  background-color:orange;
+}
+#job-info-lead{
+  background-color:purple;
+  height:50px;
+
+}
+
+#job-info-salary{
+  background-color: green;
+  height:50px;
+
+}
+
+#links{
+  width:300px;
+  background-color: grey;
+  height:50px;
+
+}
