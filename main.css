@@ -34,10 +34,10 @@ nav {
 }
 
 .jobs-visual {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /*height: 250px;*/
     background-color: #EDF2F6;
 }
@@ -126,7 +126,8 @@ nav {
     width: 260px;
     display: flex;
     justify-content: space-between;
-    margin:0px 30px}
+    margin: 0px 30px
+}
 
 #open-btn, #bookmark-btn, #edit-btn, #home-btn, #jobs-visual-menu-drp-dn {
     background-position: center;
@@ -168,152 +169,180 @@ nav {
     border-radius: 50px;
     width: 100px;
     margin: 5px 5px 3px 30px;
-     background-image: url('images/More-Filled-50.png');
+    background-image: url('images/More-Filled-50.png');
 }
 
-#jobs-visual{
-  display: flex;
-  flex-direction: column;
+#jobs-visual {
+    display: flex;
+    flex-direction: column;
 }
 
-#total-cir-graphs{
-display: flex;
-flex-direction: column;
+#total-cir-graphs {
+    display: flex;
+    flex-direction: column;
 }
 
-#total-bar-graph{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#total-bar-graph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#cir-graph-cont{
-  display: flex;
-  flex-direction: column;
+#cir-graph-cont {
+    display: flex;
+    flex-direction: column;
 }
 
-#graph1, #graph2, #graph3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-top: green solid 8px;
-  border-left: green solid 8px;
-  border-bottom:green solid 8px;
-  border-right:green solid 8px;
-  border-radius: 100%;
-  width: 150px;
-  height:150px;
-  text-align: center;
-  margin: 5px;
+#graph1, #graph2, #graph3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: green solid 8px;
+    border-left: green solid 8px;
+    border-bottom: green solid 8px;
+    border-right: green solid 8px;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 5px;
 }
 
-#graph2{
-  border-top: green solid 8px;
-  border-left: red solid 8px;
-  border-bottom:green solid 8px;
-  border-right:green solid 8px;
+#graph2 {
+    border-top: green solid 8px;
+    border-left: red solid 8px;
+    border-bottom: green solid 8px;
+    border-right: green solid 8px;
 }
 
-#graph3{
-  border-top: red solid 8px;
-  border-left: red solid 8px;
-  border-bottom:green solid 8px;
-  border-right:green solid 8px;
+#graph3 {
+    border-top: red solid 8px;
+    border-left: red solid 8px;
+    border-bottom: green solid 8px;
+    border-right: green solid 8px;
 }
 
-#cir-graph-info, #bar-graph-info{
-width:150px;
-height: 40px;
-  border-radius: 25px;
-  font-size: 12px;
-  text-align: center;
-  padding-top: 8%;
-background-color: #FFF;
-margin: 5px;
+#cir-graph-info, #bar-graph-info {
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 8%;
+    background-color: #FFF;
+    margin: 5px;
 }
 
-#bar-graph{
-height:200px;
-width:300px;
-background-color:purple
+#bar-graph {
+    height: 200px;
+    width: 300px;
+    background-color: purple
 }
 
-#job-link-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: black;
+#job-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EDF2F6;
 }
 
-#job-info{
-  padding: 25px;
-  width:100%;
-  background-color: yellow;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#job-info {
+    padding: 25px;
+    width: 100%;
+    background-color: #EDF2F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#job-info-header,
-#job-info-position,
-#job-info-type,
-#job-info-experience,
-#job-info-status,
-#job-info-lead,
-#job-info-salary{
+#job-info-header-cont, #job-info-position-cont, #job-info-type-cont, #job-info-experience-cont, #job-info-status-cont, #job-info-lead-info-cont, #job-info-salary-cont, #job-info-location-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    height: 50px;
+    align-items: center;
+    background-color: green;
+    border-bottom: grey solid 1px;
+    padding-top: 10px;
+}
+#job-info-header-info, #job-info-position-info, #job-info-type-info, #job-info-experience-info, #job-info-status-info, #job-info-lead-info-info, #job-info-salary-info, #job-info-location-info,
+#job-info-description-info {
+padding-top: 3px;
+}
+
+#job-info-header, #job-info-position, #job-info-type, #job-info-experience, #job-info-status, #job-info-lead, #job-info-salary, #job-info-location {
+    display: flex;
+    align-content: center;
+}
+
+#job-info-description-cont{
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
   padding-left: 10px;
-  height:50px;
   align-items: center;
-  background-color: green;
-
-}
-
-#job-info-position{
-  background-color: red;
-  height:50px;
-
-}
-
-#job-info-type{
-  background-color: blue;
-  height:50px;
-
-}
-
-#job-info-experience{
-  background-color: pink;
-  height:50px;
-
-}
-
-#job-info-status{
-  background-color: blue;
-  height:50px;
+  border-bottom: grey solid 1px;
+  background-color: purple;
+  padding-top: 10px;
 
 }
 
 #job-info-description{
-  background-color:orange;
-}
-#job-info-lead{
-  background-color:purple;
-  height:50px;
-
+  padding: 5px;
 }
 
-#job-info-salary{
-  background-color: green;
-  height:50px;
-
+#job-info-position {
+    background-color: red;
 }
 
-#links{
-  width:300px;
-  background-color: grey;
-  height:50px;
-
+#job-info-location {
+    background-color: purple;
 }
+
+#job-info-type {
+    background-color: blue;
+}
+
+#job-info-experience {
+    background-color: pink;
+}
+
+#job-info-status {
+    background-color: blue;
+}
+
+#job-info-description {
+    background-color: orange;
+    display:
+}
+
+#job-info-lead {
+    background-color: purple;
+}
+
+#job-info-salary {
+    background-color: green;
+}
+
+#links {
+  display: flex;
+flex-direction: column;
+justify-content: space-around;
+    background-color: #EDF2F6;
+    width: 320px;
+}
+
+button{
+  width: 270px;
+height: 50px;
+margin:5px;
+display: block;
+margin: 0px auto;
+}
+
+img{
+  width:20px;
+  height:20px;
