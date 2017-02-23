@@ -2,7 +2,11 @@
     box-sizing: border-box;
     font-weight: 200;
     font-family: sans-serif;
+    border: 1px blue solid;
 }
+
+
+
 
 body {
     height: 100vh;
@@ -337,12 +341,30 @@ justify-content: space-around;
 
 button{
   width: 270px;
-height: 50px;
-margin:5px;
-display: block;
-margin: 0px auto;
+  height: 50px;
+  display: block;
+  margin: 0px auto;
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  border:0px;
+  outline:0px;
+}
+img{
+  float:left;
+  width:25px;
+  height:25px;
+  position: relative;;
+  right:-10px;
+}
+#facebook-btn{
+  background-color:#3c5a99;
 }
 
-img{
-  width:20px;
-  height:20px;
+#twitter-btn{
+  background-color: #1A92DB;
+}
+
+#instagram-btn{
+  background-color:
+}
