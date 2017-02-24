@@ -2,11 +2,7 @@
     box-sizing: border-box;
     font-weight: 200;
     font-family: sans-serif;
-    border: 1px blue solid;
 }
-
-
-
 
 body {
     height: 100vh;
@@ -25,7 +21,7 @@ nav {
     justify-content: space-between;
     height: 50px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 #top-link-container {
@@ -42,23 +38,22 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*height: 250px;*/
     background-color: #EDF2F6;
 }
 
-.job-link-container {
+/*.job-link-container {
     height: 600px;
-    background-color: red;
-}
+}*/
 
 .menu {
     background-image: url("images/Menu-64.png");
-    border-right: .3px grey solid;
+    border-right: .3px #b2b2b2 solid;
 }
 
 .menu, #search-field, #search-field-small-width, #setting, #account, #setting, #profile {
     background-color: #fff;
     background-size: 25px;
+    border-bottom: 1px #b2b2b2 solid
 }
 
 #search-field, #search-field-small-width {
@@ -66,11 +61,12 @@ nav {
     background-image: url("images/Search-50.png");
     background-position: left center;
     background-repeat: no-repeat;
-    border-top: .3px grey solid;
+    border-top: .3px #b2b2b2 solid;
     border-left: none;
     border-right: none;
     padding-left: 5px;
     text-indent: 20px;
+    font-size: 20px;
 }
 
 #search-field {
@@ -91,13 +87,13 @@ nav {
 
 #account {
     background-image: url("images/User-Filled-50.png");
-    border-right: 1px grey solid;
-    border-left: 1px grey solid;
+    border-right: 1px #b2b2b2 solid;
+    border-left: 1px #b2b2b2 solid;
 }
 
 #setting {
     background-image: url("images/Accounting-64.png");
-    border-right: 1px grey solid;
+    border-right: 1px #b2b2b2 solid;
 }
 
 #profile {
@@ -108,7 +104,7 @@ nav {
 #job-info-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #job-classification {
@@ -118,8 +114,6 @@ nav {
 #job-title {
     font-size: 26px;
 }
-
-#job-location {}
 
 #job-location-link {
     font-size: 12px;
@@ -139,7 +133,7 @@ nav {
     background-repeat: no-repeat;
     background-color: #fff;
     height: 40px;
-    border: 2px grey solid;
+    border: 2px #b2b2b2 solid;
     outline: none;
 }
 
@@ -195,6 +189,9 @@ nav {
 #cir-graph-cont {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
 
 #graph1, #graph2, #graph3 {
@@ -228,19 +225,22 @@ nav {
 }
 
 #cir-graph-info, #bar-graph-info {
-    width: 150px;
+    width: 200px;
     height: 40px;
     border-radius: 25px;
-    font-size: 12px;
-    text-align: center;
-    padding-top: 8%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FFF;
     margin: 5px;
+    font-weight: 300;
 }
 
 #bar-graph {
     height: 200px;
     width: 300px;
+    margin: 10px;
     background-color: purple
 }
 
@@ -253,12 +253,19 @@ nav {
 }
 
 #job-info {
-    padding: 25px;
-    width: 100%;
+    width: 93%;
     background-color: #EDF2F6;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    f.e
+}
+
+#bottom-links {
+    display: flex;
+    flex-direction: column;
+    height: 850px;
+    width: 300px;
 }
 
 #job-info-header-cont, #job-info-position-cont, #job-info-type-cont, #job-info-experience-cont, #job-info-status-cont, #job-info-lead-info-cont, #job-info-salary-cont, #job-info-location-cont {
@@ -268,103 +275,186 @@ nav {
     padding-left: 10px;
     height: 50px;
     align-items: center;
-    background-color: green;
-    border-bottom: grey solid 1px;
-    padding-top: 10px;
-}
-#job-info-header-info, #job-info-position-info, #job-info-type-info, #job-info-experience-info, #job-info-status-info, #job-info-lead-info-info, #job-info-salary-info, #job-info-location-info,
-#job-info-description-info {
-padding-top: 3px;
+    background-color: #fff;
+    border-bottom: #b2b2b2 solid 1px;
+    /*padding-top: 10px;*/
 }
 
+#job-info-header-info, #job-info-position-info, #job-info-type-info, #job-info-experience-info, #job-info-status-info, #job-info-lead-info-info, #job-info-salary-info, #job-info-location-info, #job-info-description-info {
+    padding-top: 3px;
+    line-height: 14px;
+}
+
+#job-info-description-info {
+    line-height: 24px;
+}
+
+
+}
 #job-info-header, #job-info-position, #job-info-type, #job-info-experience, #job-info-status, #job-info-lead, #job-info-salary, #job-info-location {
     display: flex;
     align-content: center;
 }
-
-#job-info-description-cont{
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding-left: 10px;
-  align-items: center;
-  border-bottom: grey solid 1px;
-  background-color: purple;
-  padding-top: 10px;
-
+#job-info-header-cont {
+    background-color: #6D7E96;
+    color: #fff;
 }
-
-#job-info-description{
-  padding: 5px;
+#job-info-header-info {
+    background-color: #717E94
 }
-
-#job-info-position {
-    background-color: red;
+#job-info-header-info img {
+    width: 20px;
+    height: 15px;
 }
-
-#job-info-location {
-    background-color: purple;
+#job-info-description-cont {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 10px;
+    align-items: center;
+    border-bottom: #b2b2b2 solid 1px;
+    background-color: #FFF;
+    padding-top: 10px;
 }
-
-#job-info-type {
-    background-color: blue;
-}
-
-#job-info-experience {
-    background-color: pink;
-}
-
-#job-info-status {
-    background-color: blue;
-}
-
 #job-info-description {
-    background-color: orange;
-    display:
+    padding: 5px;
 }
-
-#job-info-lead {
-    background-color: purple;
+.info-cat {
+    font-weight: 500;
+    padding-bottom: 4px;
 }
-
-#job-info-salary {
-    background-color: green;
-}
-
 #links {
-  display: flex;
-flex-direction: column;
-justify-content: space-around;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 5px;
     background-color: #EDF2F6;
-    width: 320px;
 }
+#link-job, #upload-resume, #button-widget {
+    flex: 1;
+    background-color: #EDF2F6;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #b2b2b2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+button {
+    width: 300px;
+    height: 50px;
+    display: block;
+    margin: 0px auto;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    border: 0px;
+    outline: 0px;
+}
+.button-img {
+    float: left;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: -10px;
+}
+#facebook-btn {
+    background-color: #3c5a99;
+}
+#twitter-btn {
+    background-color: #1A92DB;
+}
+#linkedin-btn {
+    background-color: #0077b5
+}
+#link-job-cont {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    flex: 1;
+}
+#link-job-title {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+#link-job-title h1 {
+    padding-left: 15px
+}
+#globe-img {
+    width: 20px;
+    height: 20px;
+}
+#input-cont {
+    display: flex;
+}
+.copy-text {
+    text-indent: 10px;
+    flex: 70%;
+    height: 40px;
+    font-size: 16px;
+}
+.copy-btn {
+    flex: 30%;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #48BBBE;
+}
+.copy-text, .copy-btn {
+    border: none;
+    outline: none;
+}
+@media (min-width:480px) {
+    #search-field-small-width {
+        display: none;
+    }
 
-button{
-  width: 270px;
-  height: 50px;
-  display: block;
-  margin: 0px auto;
-  font-size: 17px;
-  color: #fff;
-  text-align: center;
-  border:0px;
-  outline:0px;
+    #search-field {
+        display: block;
+    }
 }
-img{
-  float:left;
-  width:25px;
-  height:25px;
-  position: relative;;
-  right:-10px;
-}
-#facebook-btn{
-  background-color:#3c5a99;
-}
+@media(min-width:565px) {
+    #job-info-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-#twitter-btn{
-  background-color: #1A92DB;
-}
+    #jobs-visual-menu-drp-dn {
+        display: none;
+    }
 
-#instagram-btn{
-  background-color:
+    #job-link-container {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+
+    #job-info {
+        justify-content: flex-start;
+        padding: 0px 15px 0px 15px;
+    }
+
+    #links {
+        justify-content: space-between;
+    }
+
+    #total-cir-graphs {
+        align-items: center;
+    }
+
+    #cir-graph-cont {
+        flex-direction: row;
+    }
+
+    #job-info-description-info {
+        margin: 5px;
+    }
+    #job-info-header-cont, #job-info-position-cont, #job-info-type-cont, #job-info-experience-cont, #job-info-status-cont, #job-info-lead-info-cont, #job-info-salary-cont, #job-info-location-cont {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+    }
 }
