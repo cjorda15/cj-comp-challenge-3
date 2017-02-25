@@ -10,174 +10,294 @@
 </head>
 
 <body>
-    <aside>
-
-    </aside>
-    <main>
-        <nav>
-            <div class="menu"></div>
-            <input id="search-field" type="text" placeholder="Search" />
-            <div id="top-link-container">
-
-                <div id="account">
+    <div id="page-container">
+        <aside id="side-nav-bar">
+            <section id="account">
+                <div id="account-pic-cont">
 
                 </div>
-                <div id="setting">
-
+                <div id="account-name">Jerry Garcia</div>
+            </section>
+            <section id="side-nav-menu">
+                <div class="side-bar-head">
+                    Main
                 </div>
-                <div id="profile">
-
+                <div class="menu-container">
+                    <div class="side-bar-img" id="menu-home-img"></div>
+                    <div class="menu-text">Home</div>
                 </div>
-            </div>
-        </nav>
-        <input id="search-field-small-width" type="text" placeholder="Search" />
-        <section class="jobs-menu">
-            <div id="job-info-container">
-                <div id="job-classification">
-                    <h1 id="job-title">Front-End Engineer</h1>
-                    <p id="job-location">
-                        Denver, CO <a id="job-location-link" href="#">. Preview this post</a>
-                    </p>
+                <div class="menu-container">
+                    <div class="side-bar-img" id="menu-jobs-img"></div>
+                    <div class="menu-text">Jobs</div>
                 </div>
-                <div id="job-info-btn">
-                    <input type="button" id="open-btn" value="Open" />
-                    <input type="button" id="bookmark-btn" />
-                    <input type="button" id="edit-btn" />
-                    <input type="button" id="home-btn" />
+                <div class="menu-container">
+                    <div class="side-bar-img" id="menu-resumes-img"></div>
+                    <div class="menu-text">Resumes</div>
                 </div>
-            </div>
-            <div id="jobs-visual-menu-drp-dn">
+                <div class="menu-container">
+                    <div class="side-bar-img" id="menu-task-img"></div>
+                    <div class="menu-text">Tasks</div>
+                </div>
+                <div class="menu-container">
+                    <div class="side-bar-img" id="menu-calendar-img"></div>
+                    <div class="menu-text">Calendar</div>
+            </section>
+            <section id="side-nav-admin">
+                <div class="side-bar-head">Admin</div>
+                <div class="menu-container">
+                    <div class="side-bar-img" id="admin-users-img"></div>
+                    <div class="menu-text">Users</div>
+                </div>
+                <div class="menu-container">
+                    <div class="side-bar-img" id="admin-locations-img"></div>
+                    <div class="menu-text">Locations</div>
+                </div>
+                <div class="menu-container">
+                    <div class="side-bar-img" id="admin-workflows-img"></div>
+                    <div class="menu-text">Workflows</div>
+                </div>
+                <div class="menu-container">
+                    <div class="side-bar-img" id="admin-job-boards-img"></div>
+                    <div class="menu-text">Job Boards</div>
+                </div>
+                <div class="menu-container">
+                    <div class="side-bar-img" id="admin-social-img"></div>
+                    <div class="menu-text">Social</div>
+            </section>
+            <section id="side-nav-categories">
+                <div class="side-bar-head">Categories</div>
+                <div class="menu-container">
+                    <div class="checkbox-cont">
 
-            </div>
-        </section>
-        <section class="jobs-visual">
+                    <div class = "checkbox-color"id="check1">
 
-            <div id="total-cir-graphs">
-
-                <div id="cir-graph-cont">
-                    <div id="graph1">
-                        <div class="graph-#">3026</div>
-                        <div class="graph-text">applicants</div>
                     </div>
-                    <div id="graph2">
-                        <div class="graph-#">1611</div>
-                        <div class="graph-text">interviews
+                    <input type="checkbox"  />
+                  </div>
+                    <div class="menu-text">Administrative
+
+                    </div>
+                </div>
+                <div class="menu-container">
+                  <div class="checkbox-cont">
+
+                  <div class = "checkbox-color" id="check2">
+
+                  </div>
+                  <input type="checkbox" />
+                  </div>                    <div class="menu-text">Design
+                    </div>
+                </div>
+                <div class="menu-container">
+                  <div class="checkbox-cont">
+
+                  <div class = "checkbox-color" id="check3">
+
+                  </div>
+                  <input type="checkbox" />
+                  </div>                    <div class="menu-text">Executive
+                    </div>
+                </div>
+                <div class="menu-container">
+                  <div class="checkbox-cont">
+
+                  <div class = "checkbox-color" id="check4">
+
+                  </div>
+                  <input type="checkbox" />
+                  </div>                    <div class="menu-text">Human Resources
+                    </div>
+                </div>
+
+            </section>
+
+        </aside>
+
+        <main>
+
+
+
+            <nav id="top-nav-bar">
+                <div id="small-menu"></div>
+                <div id="small-background-top">
+
+                </div>
+                <input id="search-field" type="text" placeholder="Search" />
+                <div id="top-link-container">
+
+                    <div id="account-icon">
+
+                    </div>
+                    <div id="setting-icon">
+
+                    </div>
+                    <div id="profile-icon">
+
+                    </div>
+                </div>
+            </nav>
+            <input id="search-field-small-width" type="text" placeholder="Search" />
+            <section class="jobs-menu">
+                <div id="job-info-container">
+                    <div id="job-classification">
+                        <h1 id="job-title">Front-End Engineer</h1>
+                        <div id="location-cont">
+
+                        <div id="location-marker">
+
+                        </div>
+                        <p id="job-location">
+                            Denver, CO <a id="job-location-link" href="#">. Preview this post</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div id="job-info-btn">
+                        <input type="button" id="open-btn" value="Open" />
+                        <input type="button" id="bookmark-btn" />
+                        <input type="button" id="edit-btn" />
+                        <input type="button" id="home-btn" />
+                    </div>
+                </div>
+                <div class="hover" id="jobs-visual-menu-drp-dn">
+
+                </div>
+                <nav id="wider-screen-nav-bar">
+                    <div class="nav-bar-btn">Summary</div>
+                    <div class="nav-bar-btn">Applicants</div>
+                    <div class="nav-bar-btn">Job Board</div>
+                    <div class="nav-bar-btn">Interviews</div>
+                    <div class="nav-bar-btn">Activity</div>
+                    <div class="nav-bar-btn">Broadcast</div>
+                    <div class="nav-bar-btn">Notifications</div>
+                </nav>
+            </section>
+            <section class="jobs-visual">
+
+                <div id="total-cir-graphs">
+
+                    <div id="cir-graph-cont">
+                        <div id="graph1">
+                            <div class="graph-num">3,026</div>
+                            <div class="graph-text">applicants</div>
+                        </div>
+                        <div id="graph2">
+                            <div class="graph-num">1,611</div>
+                            <div class="graph-text">interviews
+                            </div>
+                        </div>
+                        <div id="graph3">
+                            <div class="graph-num">968</div>
+                            <div class="graph-text">offers
+                            </div>
                         </div>
                     </div>
-                    <div id="graph3">
-                        <div class="graph-#">968</div>
-                        <div class="graph-text">offers
+                    <div id="cir-graph-info">Totals - Out of 5222 views</div>
+                </div>
+                <div id="total-bar-graph">
+                    <div id="bar-graph">
+
+                    </div>
+                    <div id="bar-graph-info">Applications/Day</div>
+                </div>
+            </section>
+            <div id="job-link-container">
+              <article id="job-info">
+                   <div id="job-info-header-cont">
+
+                        <header class="info-cat" id="job-info-header">Job Description</header>
+                        <div id="job-info-header-info"><img src="images/Pencil-50.png" /> edit</div>
+                    </div>
+                    <div id="job-info-position-cont">
+                        <section class="info-cat" id="job-info-position">Position Type</section>
+                        <div id="job-info-position-info">Front-End Engineer</div>
+                    </div>
+
+
+                    <div id="job-info-location-cont">
+
+                        <section class="info-cat" id="job-info-location">Location</section>
+                        <div id="job-info-location-info">Denver, CO</div>
+                    </div>
+
+
+                    <div id="job-info-type-cont">
+
+                        <section class="info-cat" id="job-info-type">Employment Type</section>
+                        <div id="job-info-type-info">Full-time</div>
+                    </div>
+                    <div id="job-info-experience-cont">
+
+                        <section class="info-cat" id="job-info-experience">Exerience</section>
+                        <div id="job-info-experience-info">Entry-level</div>
+                    </div>
+                    <div id="job-info-status-cont">
+
+                        <section class="info-cat" id="job-info-status">Status</section>
+                        <div id="job-info-status-info">Open</div>
+                    </div>
+                    <div id="job-info-description-cont">
+
+                        <section class="info-cat" id="job-info-description">Description</section>
+                        <div id="job-info-description-info">A passion for developing intuitive user interfaces and the ability to give and receive constructive feedback on current and future designs. Deep knowledge and understanding of HTML, CSS, JS, and current libraries/frameworks for the industry</div>
+                    </div>
+                    <div id="job-info-lead-info-cont">
+
+                        <section class="info-cat" id="job-info-lead">Hiring Lead</section>
+                        <div id="job-info-lead-info">Jerry Lennon
+
+                        </div>
+                    </div>
+                    <div id="job-info-salary-cont">
+
+                        <section class="info-cat" id="job-info-salary">Salary</section>
+                        <div id="job-info-salary-info">$45,000/yr
+
+                        </div>
+                    </div>
+                </article>
+                <div id="bottom-links">
+                    <div id="links">
+                        <button id="facebook-btn"><img class="button-img" src="images/Facebook-48.png"/>Post to Facebook</button>
+                        <button id="twitter-btn"><img class="button-img" src="images/Twitter-52.png"/>Tweet this Job</button>
+                        <button id="linkedin-btn"><img class="button-img" src="images/LinkedIn-48.png"/>Post to Linkedin</button>
+                    </div>
+                    <div id="link-job">
+                        <div id="link-job-title">
+                            <img id="globe-img" src="images/Globe-52.png" />
+                            <h1>Link To this Job</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doo woop ditity do wop do whipiity wop</p>
+                        <div id="input-cont">
+
+                            <input class="copy-text" type="text" value="http://bestJobOnThePlanet" /><input class="copy-btn" type="button" value="copy" />
+                        </div>
+                    </div>
+                    <div id="button-widget">
+                        <div id="link-job-title">
+                            <img id="globe-img" src="images/List-2-64.png" />
+                            <h1>Use the Button Widget</h1>
+                        </div>
+                        <p>This widget embeds the button for sharing the job for submiting a resume on your website</p>
+                        <div id="input-cont">
+
+                            <input class="copy-text" type="text" value="<script type='text/javascript...' " /><input class="copy-btn" type="button" value="copy" />
+                        </div>
+                    </div>
+                    <div id="upload-resume">
+                        <div id="link-job-title">
+                            <img id="globe-img" src="images/Resume-50.png" />
+                            <h1>Upload Resumes by Email</h1>
+                        </div>
+                        <p>You can automatically upload multiple resumes to this job by emailing the address below</p>
+                        <div id="input-cont">
+
+                            <input class="copy-text" type="text" value="JimiMorrison@gmail.com" />
                         </div>
                     </div>
                 </div>
-                <div id="cir-graph-info">Totals - Out of 5222 views</div>
             </div>
-            <div id="total-bar-graph">
-                <div id="bar-graph">
-
-                </div>
-                <div id="bar-graph-info">Application/Day</div>
-            </div>
-        </section>
-        <div id="job-link-container">
-            <article id="job-info">
-                <div id="job-info-header-cont">
-
-                    <header class="info-cat" id="job-info-header">Job Description</header>
-                    <div id="job-info-header-info"><img src="images/Pencil-50.png" /> edit</div>
-                </div>
-                <div id="job-info-position-cont">
-                    <section class="info-cat" id="job-info-position">Position Type</section>
-                    <div id="job-info-position-info">Front-End Engineer</div>
-                </div>
-
-
-                <div id="job-info-location-cont">
-
-                    <section class="info-cat" id="job-info-location">Location</section>
-                    <div id="job-info-location-info">Denver, CO</div>
-                </div>
-
-
-                <div id="job-info-type-cont">
-
-                    <section class="info-cat" id="job-info-type">Employment Type</section>
-                    <div id="job-info-type-info">Full-time</div>
-                </div>
-                <div id="job-info-experience-cont">
-
-                    <section class="info-cat" id="job-info-experience">Exerience</section>
-                    <div id="job-info-experience-info">Entry-level</div>
-                </div>
-                <div id="job-info-status-cont">
-
-                    <section class="info-cat" id="job-info-status">Status</section>
-                    <div id="job-info-status-info">Open</div>
-                </div>
-                <div id="job-info-description-cont">
-
-                    <section class="info-cat" id="job-info-description">Description</section>
-                    <div id="job-info-description-info">A passion for developing intuitive user interfaces – ability to give and receive constructive feedback on current and future designs. Deep knowledge and understanding of HTML and ability to translate vector or bitmap-based visuals
-                        into HTML layouts. Expertise with JavaScript frameworks such as AngularJS and Bootstrap as strong plus.Experience with IDEs, build tools, and code repositories. Familiarity with Microsoft-based ALM tools a plus (Visual Studio and
-                        TFS).Experience consuming REST web services and the knowledge of the JSON data format</div>
-                </div>
-                <div id="job-info-lead-info-cont">
-
-                    <section class="info-cat" id="job-info-lead">Hiring Lead</section>
-                    <div id="job-info-lead-info">Jerry Lennon
-
-                    </div>
-                </div>
-                <div id="job-info-salary-cont">
-
-                    <section class="info-cat" id="job-info-salary">Salary</section>
-                    <div id="job-info-salary-info">$45,000/yr
-
-                    </div>
-                </div>
-            </article>
-            <div id="bottom-links">
-                <div id="links">
-                    <button id="facebook-btn"><img class="button-img" src="images/Facebook-48.png"/>Post to Facebook</button>
-                    <button id="twitter-btn"><img class="button-img" src="images/Twitter-52.png"/>Tweet this Job</button>
-                    <button id="linkedin-btn"><img class="button-img" src="images/LinkedIn-48.png"/>Post to Linkedin</button>
-                </div>
-                <div id="link-job">
-                    <div id="link-job-title">
-                        <img id="globe-img" src="images/Globe-52.png" />
-                        <h1>Link To this Job</h1>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doo woop ditity do wop do whipiity wop</p>
-                    <div id="input-cont">
-
-                        <input class="copy-text" type="text" value="http://bestJobOnThePlanet" /><input class="copy-btn" type="button" value="copy" />
-                    </div>
-                </div>
-                <div id="button-widget">
-                    <div id="link-job-title">
-                        <img id="globe-img" src="images/List-2-64.png" />
-                        <h1>Use the Button Widget</h1>
-                    </div>
-                    <p>This widget embeds the button for sharing the job for submiting a resume on your website</p>
-                    <div id="input-cont">
-
-                        <input class="copy-text" type="text" value="<script type='text/javascript...' " /><input class="copy-btn" type="button" value="copy" />
-                    </div>
-                </div>
-                <div id="upload-resume">
-                    <div id="link-job-title">
-                        <img id="globe-img" src="images/Resume-50.png" />
-                        <h1>Upload Resumes by Email</h1>
-                    </div>
-                    <p>You can automatically upload multiple resumes to this job by emailing the address below</p>
-                    <div id="input-cont">
-
-                        <input class="copy-text" type="text" value="JimiMorrison@gmail.com" />
-                    </div>
-                </div>
-            </div>
+        </main>
         </div>
-    </main>
 </body>
 
 </html>
