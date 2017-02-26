@@ -22,6 +22,27 @@ body {
     background-color: #354052;
 }
 
+#account {
+    display: flex;
+    justify-content: space-around;
+    ;
+    align-items: center;
+    flex-direction: column;
+}
+
+#account-pic-cont {
+    border-radius: 100%;
+    background-image: url('images/jg.jpg');
+    width: 90px;
+    height: 90px;
+    background-position: top left;
+}
+
+#account-name {
+    color: #a2a6ad;
+    font-weight: 100;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
 
 .menu-container {
     display: flex;
@@ -35,6 +56,9 @@ body {
     background-color: #000;
     color: #fff;
 }
+.menu-container input {
+    margin: 0px 10px 0px 10px;
+}
 
 .menu-text {
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
@@ -42,9 +66,7 @@ body {
     font-weight: 100;
 }
 
-.menu-container input {
-    margin: 0px 10px 0px 10px;
-}
+
 
 #top-nav-bar {
     display: flex;
@@ -54,27 +76,6 @@ body {
     background-color: #fff;
 }
 
-#account {
-    display: flex;
-    justify-content: space-around;
-    ;
-    align-items: center;
-    flex-direction: column;
-}
-
-#account-pic-cont {
-    border-radius: 100%;
-    background-image: url('images/gd.png');
-    width: 90px;
-    height: 90px;
-    background-position: center center;
-}
-
-#account-name {
-    color: #a2a6ad;
-    font-weight: 100;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-}
 
 #top-link-container {
     display: flex;
@@ -181,71 +182,6 @@ z-index: -1;
 background-color: white;
 display: none;
 }
-#check1{
-  background-color: yellow;
-
-}
-#check2{
-  background-color: blue;
-
-}
-#check3{
-  background-color: red;
-
-}
-#check4{
-  background-color: green;
-
-}
-
-#menu-home-img {
-    background-image: url('images/Home-48.png');
-}
-
-#menu-jobs-img {
-    background-image: url('images/Briefcase-48.png')
-}
-
-#menu-resumes-img {
-    background-image: url('images/Resume-48.png')
-}
-
-#menu-task-img {
-    background-image: url('images/Tasks-48.png')
-}
-
-#menu-calendar-img {
-    background-image: url('images/Calendar-Filled-50.png')
-}
-
-#admin-users-img {
-    background-image: url('images/User-Group-Man-Man-52.png')
-}
-
-#admin-locations-img {
-    background-image: url('images/Marker-52.png')
-}
-
-#admin-workflows-img {
-    background-image: url('images/Flow-Chart-52.png')
-}
-
-#admin-job-boards-img {
-    background-image: url('images/Billboard-Filled-50.png')
-}
-
-#admin-social-img {
-    background-image: url('images/WhatsApp-48.png')
-}
-
-#small-menu {
-    background-image: url("images/Menu-64.png");
-    border-right: .3px #b2b2b2 solid;
-}
-
-#small-menu:hover {
-    background-image: url('images/Menu-white-48.png');
-}
 
 #small-menu, #search-field, #search-field-small-width, #setting, #account-icon, #setting-icon, #profile-icon {
     background-color: #fff;
@@ -266,12 +202,8 @@ display: none;
 }
 
 #small-background-top{
-  background-image: url('images/gd.png');
-  background-repeat: no-repeat;
-  flex:1;
-  background-size: contain;
-  background-position: bottom;
-
+  background-color: #EDF2F6;
+  flex: 1;
 }
 
 #search-field {
@@ -294,33 +226,6 @@ display: none;
     background-color: #1A92DB;
 }
 
-#account-icon {
-    background-image: url("images/User-Filled-50.png");
-    border-right: 1px #b2b2b2 solid;
-    border-left: 1px #b2b2b2 solid;
-}
-
-#account-icon:hover {
-    background-image: url('images/User-white-Filled-50.png')
-}
-
-#setting-icon {
-    background-image: url("images/Accounting-64.png");
-    border-right: 1px #b2b2b2 solid;
-}
-
-#setting-icon:hover {
-    background-image: url('images/Accounting-white-64.png');
-}
-
-#profile-icon {
-    background-image: url('images/Settings-Filled-50.png');
-    margin-right: 10px;
-}
-
-#profile-icon:hover {
-    background-image: url('images/Settings-white-Filled-50.png');
-}
 
 #wider-screen-nav-bar {
     display: none;
@@ -399,29 +304,6 @@ display: none;
     color: #fff;
 }
 
-#bookmark-btn {
-    background-image: url('images/Bookmark-Ribbon-48.png');
-}
-
-#bookmark-btn:hover {
-    background-image: url('images/Bookmark-white-Ribbon-48.png')
-}
-
-#edit-btn {
-    background-image: url('images/Ball-Point-Pen-52.png')
-}
-
-#edit-btn:hover {
-    background-image: url('images/Ball-white-Point-Pen-52.png');
-}
-
-#home-btn {
-    background-image: url('images/Library-48.png')
-}
-
-#home-btn:hover {
-    background-image: url('images/Library-white-48.png')
-}
 
 #jobs-visual-menu-drp-dn {
     border-radius: 50px;
@@ -557,6 +439,8 @@ display: none;
 
 #job-info-description-info {
     line-height: 24px;
+    text-overflow:ellipsis;
+    overflow: auto;
 }
 
 
@@ -697,6 +581,128 @@ button {
     border: none;
     outline: none;
 }
+
+#menu-home-img {
+    background-image: url('images/Home-48.png');
+}
+
+#menu-jobs-img {
+    background-image: url('images/Briefcase-48.png')
+}
+
+#menu-resumes-img {
+    background-image: url('images/Resume-48.png')
+}
+
+#menu-task-img {
+    background-image: url('images/Tasks-48.png')
+}
+
+#menu-calendar-img {
+    background-image: url('images/Calendar-Filled-50.png')
+}
+
+#admin-users-img {
+    background-image: url('images/User-Group-Man-Man-52.png')
+}
+
+#admin-locations-img {
+    background-image: url('images/Marker-52.png')
+}
+
+#admin-workflows-img {
+    background-image: url('images/Flow-Chart-52.png')
+}
+
+#admin-job-boards-img {
+    background-image: url('images/Billboard-Filled-50.png')
+}
+
+#admin-social-img {
+    background-image: url('images/WhatsApp-48.png')
+}
+
+#small-menu {
+    background-image: url("images/Menu-64.png");
+    border-right: .3px #b2b2b2 solid;
+}
+
+#small-menu:hover {
+    background-image: url('images/Menu-white-48.png');
+}
+
+
+
+#account-icon {
+    background-image: url("images/User-Filled-50.png");
+    border-right: 1px #b2b2b2 solid;
+    border-left: 1px #b2b2b2 solid;
+}
+
+#account-icon:hover {
+    background-image: url('images/User-white-Filled-50.png')
+}
+
+#setting-icon {
+    background-image: url("images/Accounting-64.png");
+    border-right: 1px #b2b2b2 solid;
+}
+
+#setting-icon:hover {
+    background-image: url('images/Accounting-white-64.png');
+}
+
+#profile-icon {
+    background-image: url('images/Settings-Filled-50.png');
+    margin-right: 10px;
+}
+
+#profile-icon:hover {
+    background-image: url('images/Settings-white-Filled-50.png');
+}
+
+#bookmark-btn {
+    background-image: url('images/Bookmark-Ribbon-48.png');
+}
+
+#bookmark-btn:hover {
+    background-image: url('images/Bookmark-white-Ribbon-48.png')
+}
+
+#edit-btn {
+    background-image: url('images/Ball-Point-Pen-52.png')
+}
+
+#edit-btn:hover {
+    background-image: url('images/Ball-white-Point-Pen-52.png');
+}
+
+#home-btn {
+    background-image: url('images/Library-48.png')
+}
+
+#home-btn:hover {
+    background-image: url('images/Library-white-48.png')
+}
+
+#check1{
+  background-color: yellow;
+
+}
+#check2{
+  background-color: blue;
+
+}
+#check3{
+  background-color: red;
+
+}
+#check4{
+  background-color: green;
+
+}
+
+
 @media (min-width:480px) {
 
     #search-field-small-width {
@@ -773,7 +779,7 @@ button {
     }
 
     #job-info-description-info {
-        margin: 5px;
+        height:279px;
     }
 
     #job-info-header-cont, #job-info-position-cont, #job-info-type-cont, #job-info-experience-cont, #job-info-status-cont, #job-info-lead-info-cont, #job-info-salary-cont, #job-info-location-cont {
