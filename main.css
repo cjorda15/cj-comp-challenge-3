@@ -434,7 +434,7 @@ input[type=checkbox]:checked {}
     /*padding-top: 10px;*/
 }
 
-#job-info-header-info, #job-info-position-info, #job-info-type-info, #job-info-experience-info, #job-info-status-info, #job-info-lead-info-info, #job-info-salary-info, #job-info-location-info, #job-info-description-info {
+.job-info{
     padding-top: 3px;
     line-height: 14px;
 }
@@ -776,7 +776,7 @@ input[type=checkbox]:hover, input[type=checkbox]:active, input[type=checkbox]:ch
         max-width: 160px;
     }
 
-    #job-info-header-info #job-info-position-info, #job-info-type-info, #job-info-experience-info, #job-info-status-info, #job-info-lead-info-info, #job-info-salary-info, #job-info-location-info, #job-info-description-info, #job-info-lead-info {
+    .job-info {
         flex: 1
     }
 
