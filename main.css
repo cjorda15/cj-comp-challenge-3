@@ -68,7 +68,6 @@ body {
     font-weight: 100;
 }
 
-
 .jobs-menu {
     height: 170px;
     background-color: #fff;
@@ -81,6 +80,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #EDF2F6;
+    border-top: #a2a6ad solid 2px;
 }
 
 #account {
@@ -173,6 +173,7 @@ input[type=checkbox]:checked {}
     background-color: white;
     display: none;
 }
+
 #top-nav-bar {
     display: flex;
     justify-content: space-between;
@@ -185,9 +186,9 @@ input[type=checkbox]:checked {}
     display: flex;
 }
 
-#small-menu, #search-field, #search-field-small-width,  #account-icon, #setting-icon, #profile-icon {
+#small-menu, #search-field, #search-field-small-width, #account-icon, #setting-icon, #profile-icon {
     background-color: #fff;
-    background-size: 25px;
+    background-size: 20px;
 }
 
 #search-field, #search-field-small-width {
@@ -215,6 +216,7 @@ input[type=checkbox]:checked {}
 #search-field-small-width {
     height: 45px;
     width: 100%;
+    font-size:14px;
 }
 
 #small-menu, #account-icon, #setting-icon, #profile-icon {
@@ -262,7 +264,7 @@ input[type=checkbox]:checked {}
 #job-location-link {
     font-size: 12px;
     text-decoration: none;
-    color: #1A92DB;
+    color: #5bdbef;
 }
 
 #job-location-link:hover {
@@ -401,6 +403,8 @@ input[type=checkbox]:checked {}
     align-items: center;
     flex-direction: column;
     background-color: #EDF2F6;
+    margin: 0px 30px;
+    border-top: #a2a6ad solid 2px;
 }
 
 #job-info {
@@ -409,7 +413,6 @@ input[type=checkbox]:checked {}
     display: flex;
     flex-direction: column;
     justify-content: center;
-    f.e
 }
 
 #bottom-links {
@@ -417,7 +420,6 @@ input[type=checkbox]:checked {}
     flex-direction: column;
     height: 850px;
     width: 300px;
-    margin-right: 10px;
 }
 
 #job-info-header-cont, #job-info-position-cont, #job-info-type-cont, #job-info-experience-cont, #job-info-status-cont, #job-info-lead-info-cont, #job-info-salary-cont, #job-info-location-cont {
@@ -461,10 +463,9 @@ input[type=checkbox]:checked {}
     height: 30px;
     width: 70px;
 }
-#job-info-header-info:hover{
-  background-color:#6D7FA4;
+#job-info-header-info:hover {
+    background-color: #6D7FA4;
 }
-
 #job-info-header-info img {
     width: 20px;
     height: 15px;
@@ -673,7 +674,7 @@ button {
 #check4 {
     background-color: green;
 }
-@media (min-width:480px) {
+@media (min-width:530px) {
     #search-field-small-width {
         display: none;
     }
@@ -704,7 +705,8 @@ button {
 
     .nav-bar-btn {
         display: inline-block;
-        font-weight: 500;
+        font-weight: 600;
+        font-size: 14px;
         color: #a2a6ad
     }
 
@@ -726,12 +728,12 @@ button {
     #job-link-container {
         flex-direction: row;
         align-items: flex-start;
-        padding-top: 10px;
+        padding-top: 50px;
     }
 
     #job-info {
         justify-content: flex-start;
-        padding: 0px 15px 0px 15px;
+        padding: 0px 10px 0px 0px;
     }
 
     #links {
@@ -777,6 +779,7 @@ button {
 }
 @media (min-width:870px) {
     .jobs-visual {
+        padding-bottom: 50px;
         flex-direction: row;
         justify-content: space-around;
     }
