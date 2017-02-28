@@ -345,34 +345,83 @@ input[type=checkbox]:checked {}
     padding: 5px;
 }
 
+#circle-skeleton1{
+  position: absolute;
+  border: 10px solid #2ABB9C;
+  border-bottom: 10px solid #d8d6d8;
+  border-radius: 50%;
+  background-color: transparent;
+  height: 150px;
+  transform: rotate(-24deg);
+  width: 150px;
+}
+#circle-skeleton2{
+  position: absolute;
+    border: 10px solid #0a57ff;
+    border-bottom: 10px solid #d8d6d8;
+    border-radius: 50%;
+    background-color: transparent;
+    height: 150px;
+    transform: rotate(-145deg);
+    width: 150px;}
+
+#circle-skeleton3{
+    position: absolute;
+    border: 10px solid #d8d6d8;
+    border-bottom: 10px solid #d330d3;
+    border-radius: 50%;
+    background-color: transparent;
+    height: 150px;
+    transform: rotate(87deg);
+    width: 150px;}
+
+#circle-fill1 {
+  position: absolute;
+   border: 10px solid #d8d6d8;
+   border-bottom: 10px solid transparent;
+   border-left: 10px solid transparent;
+   border-top: 10px solid transparent;
+   border-radius: 50%;
+   background-color: transparent;
+   height: 150px;
+   transform: rotate(66deg);
+   width: 150px;
+}
+#circle-fill2{
+  position: absolute;
+  border: 10px solid #d8d6d8;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  /*border-top: 10px solid transparent;*/
+  border-radius: 50%;
+  background-color: transparent;
+  height: 150px;
+  transform: rotate(76deg);
+  width: 150px;
+}
+#circle-fill3 {
+  position: absolute;
+  /*border: 10px solid #d8d6d8;*/
+  /*border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;*/
+  border-top: 10px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  height: 150px;
+  transform: rotate(-50deg);
+  width: 150px;
+}
+
 #graph1, #graph2, #graph3 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-top: #2ABB9C solid 8px;
-    border-left: #2ABB9C solid 8px;
-    border-bottom: #2ABB9C solid 8px;
-    border-right: #2ABB9C solid 8px;
     border-radius: 100%;
     width: 150px;
     height: 150px;
     text-align: center;
     margin: 5px;
-}
-
-#graph2 {
-    border-top: #2ABB9C solid 8px;
-    border-left: red solid 8px;
-    border-bottom: #2ABB9C solid 8px;
-    border-right: #2ABB9C solid 8px;
-}
-
-#graph3 {
-    border-top: red solid 8px;
-    border-left: red solid 8px;
-    border-bottom: #2ABB9C solid 8px;
-    border-right: #2ABB9C solid 8px;
 }
 
 #cir-graph-info, #bar-graph-info {
@@ -674,6 +723,19 @@ button {
 #check4 {
     background-color: green;
 }
+
+input[type=checkbox]:hover,
+input[type=checkbox]:active,
+input[type=checkbox]:checked{
+  z-index: 5;
+}
+
+.checkbox-color:hover{
+  z-index: -1;
+  display:none;
+}
+
+
 @media (min-width:530px) {
     #search-field-small-width {
         display: none;
@@ -749,6 +811,8 @@ button {
     #cir-graph-cont {
         flex-direction: row;
     }
+
+
 
     #job-info-description-info {
         height: 279px;
