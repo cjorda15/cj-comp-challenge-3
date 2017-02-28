@@ -1,4 +1,4 @@
-* {
+    * {
     box-sizing: border-box;
     font-weight: 200;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
@@ -26,7 +26,6 @@ body {
 #account {
     display: flex;
     justify-content: space-around;
-    ;
     align-items: center;
     flex-direction: column;
 }
@@ -47,15 +46,15 @@ body {
 
 .menu-container {
     display: flex;
-    display: flex;
     height: 28px;
     align-items: center;
     color: #a2a6ad
 }
 
-.menu-container:hover {
+.menu-container:hover  {
     background-color: #000;
     color: #fff;
+    cursor: -webkit-grab;
 }
 
 .menu-container input {
@@ -90,23 +89,11 @@ body {
     width: 150px;
     height: 150px;
     border-bottom: 1px solid #6D7E96;
-    ;
 }
 
-#side-nav-menu {
-    background-color: #354052;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    width: 150px;
-    height: 300px;
-    border-bottom: 1px solid #6D7E96;
-    box-shadow: 0px -2px 12px 0px #fff;
-    color: #fff;
-}
-
-#side-nav-admin {
+#side-nav-menu,
+#side-nav-admin,
+#side-nav-categories {
     background-color: #354052;
     display: flex;
     flex-direction: column;
@@ -120,15 +107,7 @@ body {
 }
 
 #side-nav-categories {
-    background-color: #354052;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    width: 150px;
     height: 250px;
-    color: #fff;
-    box-shadow: 0px -2px 12px 0px #fff;
 }
 
 .side-bar-head {
@@ -210,14 +189,14 @@ input[type=checkbox]:checked {}
     flex: 1;
 }
 
-#search-field {
+#search-field,#wider-screen-nav-bar {
     display: none;
 }
 
 #search-field-small-width {
     height: 45px;
     width: 100%;
-    font-size:14px;
+    font-size: 14px;
 }
 
 #small-menu, #account-icon, #setting-icon, #profile-icon {
@@ -229,10 +208,7 @@ input[type=checkbox]:checked {}
 
 #open-btn:hover, #bookmark-btn:hover, #edit-btn:hover, #home-btn:hover, #jobs-visual-menu-drp-dn:hover, #account-icon:hover, #setting-icon:hover, #profile-icon:hover, #small-menu:hover {
     background-color: #1A92DB;
-}
-
-#wider-screen-nav-bar {
-    display: none;
+    cursor: -webkit-grab;
 }
 
 #job-info-container {
@@ -315,14 +291,12 @@ input[type=checkbox]:checked {}
     background-image: url('images/More-Filled-50.png');
 }
 
-#jobs-visual {
+#jobs-visual,#total-cir-graphs,#total-bar-graph,#cir-graph-cont{
     display: flex;
     flex-direction: column;
 }
 
 #total-cir-graphs {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-end;
 }
 
@@ -333,62 +307,43 @@ input[type=checkbox]:checked {}
 }
 
 #total-bar-graph {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
 #cir-graph-cont {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5px;
 }
 
-#circle-skeleton1{
+#circle-skeleton1,#circle-skeleton2,#circle-skeleton3{
   position: absolute;
-  border: 10px solid #2ABB9C;
-  border-bottom: 10px solid #d8d6d8;
   border-radius: 50%;
   background-color: transparent;
   height: 150px;
-  transform: rotate(-24deg);
   width: 150px;
+
 }
-#circle-skeleton2{
-  position: absolute;
+
+#circle-skeleton1 {
+    border: 10px solid #2ABB9C;
+    border-bottom: 10px solid #d8d6d8;
+    transform: rotate(-24deg);
+}
+
+#circle-skeleton2 {
     border: 10px solid #0a57ff;
     border-bottom: 10px solid #d8d6d8;
-    border-radius: 50%;
-    background-color: transparent;
-    height: 150px;
     transform: rotate(-145deg);
-    width: 150px;}
+}
 
-#circle-skeleton3{
-    position: absolute;
+#circle-skeleton3 {
     border: 10px solid #d8d6d8;
     border-bottom: 10px solid #d330d3;
-    border-radius: 50%;
-    background-color: transparent;
-    height: 150px;
     transform: rotate(87deg);
-    width: 150px;}
-
-#circle-fill1 {
-  position: absolute;
-   border: 10px solid #d8d6d8;
-   border-bottom: 10px solid transparent;
-   border-left: 10px solid transparent;
-   border-top: 10px solid transparent;
-   border-radius: 50%;
-   background-color: transparent;
-   height: 150px;
-   transform: rotate(66deg);
-   width: 150px;
 }
-#circle-fill2{
+
+#circle-fill1, #circle-fill2{
   position: absolute;
   border: 10px solid #d8d6d8;
   border-bottom: 10px solid transparent;
@@ -396,19 +351,17 @@ input[type=checkbox]:checked {}
   border-radius: 50%;
   background-color: transparent;
   height: 150px;
-  transform: rotate(76deg);
-  width: 150px;
-}
-#circle-fill3 {
-  position: absolute;
-  border-top: 10px solid transparent;
-  border-radius: 50%;
-  background-color: transparent;
-  height: 150px;
-  transform: rotate(-50deg);
   width: 150px;
 }
 
+#circle-fill1 {
+    border-top: 10px solid transparent;
+    transform: rotate(66deg);
+}
+
+#circle-fill2 {
+    transform: rotate(76deg);
+}
 #graph1, #graph2, #graph3 {
     display: flex;
     justify-content: center;
@@ -488,8 +441,6 @@ input[type=checkbox]:checked {}
 
 #job-info-description-info {
     line-height: 24px;
-    text-overflow: ellipsis;
-    overflow: auto;
 }
 
 
@@ -502,7 +453,6 @@ input[type=checkbox]:checked {}
     background-color: #354052;
     color: #fff;
     justify-content: space-around;
-
 }
 #job-info-header-info {
     display: flex;
@@ -514,7 +464,9 @@ input[type=checkbox]:checked {}
 }
 #job-info-header-info:hover {
     background-color: #6D7FA4;
+cursor: -webkit-grab;
 }
+
 #job-info-header-info img {
     width: 20px;
     height: 15px;
@@ -723,34 +675,23 @@ button {
 #check4 {
     background-color: green;
 }
-
-input[type=checkbox]:hover,
-input[type=checkbox]:active,
-input[type=checkbox]:checked{
-  z-index: 5;
+input[type=checkbox]:hover, input[type=checkbox]:active, input[type=checkbox]:checked {
+    z-index: 5;
 }
-
-.checkbox-color:hover{
-  z-index: -1;
-  display:none;
+.checkbox-color:hover {
+    z-index: -1;
+    display: none;
 }
-#up-arrow-cont{
-  display: none;
+#up-arrow-cont {
+    display: none;
 }
-
 @media (min-width:530px) {
-    #search-field-small-width {
+    #search-field-small-width,#small-background-top,#up-arrow-cont{
         display: none;
     }
+
     #search-field {
         display: block;
-    }
-
-    #small-background-top {
-        display: none;
-    }
-    #up-arrow-cont{
-      display: none;
     }
 }
 @media(min-width:645px) {
@@ -778,6 +719,8 @@ input[type=checkbox]:checked{
     .nav-bar-btn:hover {
         border-bottom: #1A92DB 3px solid;
         color: #000;
+        cursor: -webkit-grab;
+
     }
 
     #job-info-container {
@@ -816,8 +759,6 @@ input[type=checkbox]:checked{
         flex-direction: row;
     }
 
-
-
     #job-info-description-info {
         height: 279px;
     }
@@ -844,32 +785,36 @@ input[type=checkbox]:checked{
         align-items: flex-start;
         padding-top: 10px;
     }
+
     #job-info-header-info {
-      width:70px;
-      height:30px;
-}
-@media (min-width:870px) {
-    .jobs-visual {
-        padding-bottom: 50px;
-        flex-direction: row;
-        justify-content: space-around;
+        width: 70px;
+        height: 30px;
     }
-    #up-arrow-cont{
-      display: block;
-      position: absolute;
-      top: -20px;
-      left:50%;
-      width:40px;
-      height: 40px;
-      background-color: black;
-      background-image: url('images/Circled-Chevron-Up-Filled-50.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-radius: 100%;    }
-}
-@media (min-width:1000px) {
-    #side-nav-bar {
-        display: block;
-        background-color: #354052;
+
+    @media (min-width:870px) {
+        .jobs-visual {
+            padding-bottom: 50px;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #up-arrow-cont {
+            display: block;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            background-image: url('images/Circled-Chevron-Up-Filled-50.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 100%;
+        }
     }
-}
+
+    @media (min-width:1000px) {
+        #side-nav-bar {
+            display: block;
+            background-color: #354052;
+        }
+    }
