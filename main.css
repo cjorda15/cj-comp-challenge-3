@@ -132,8 +132,6 @@ input[type=checkbox]:hover {
     z-index: 3;
 }
 
-input[type=checkbox]:checked {}
-
 .checkbox-color {
     position: absolute;
     cursor: pointer;
@@ -162,12 +160,18 @@ input[type=checkbox]:checked {}
     display: flex;
 }
 
-#small-menu, #search-field, #search-field-small-width, #account-icon, #setting-icon, #profile-icon {
+#small-menu,
+#search-field,
+#search-field-small-width,
+#account-icon,
+#setting-icon,
+#profile-icon {
     background-color: #fff;
     background-size: 20px;
 }
 
-#search-field, #search-field-small-width {
+#search-field,
+#search-field-small-width {
     flex: 1;
     background-image: url("images/Search-50.png");
     background-position: left center;
@@ -395,7 +399,7 @@ input[type=checkbox]:checked {}
 
 #bar-graph {
     height: 195px;
-    width: 390px;
+    max-width: 290px;
     margin: 10px;
     background-image: url('images/687474703a2f2f692e696d6775722e636f6d2f53634a6b734b682e706e67.png');
     background-repeat: no-repeat;
@@ -428,7 +432,10 @@ input[type=checkbox]:checked {}
     width: 91%;
 }
 
-#job-info-header-cont, #job-info-position-cont, #job-info-type-cont, #job-info-experience-cont, #job-info-status-cont, #job-info-lead-info-cont, #job-info-salary-cont, #job-info-location-cont {
+#job-info-header-cont,
+#job-info-position-cont,
+#job-info-type-cont,
+#job-info-experience-cont, #job-info-status-cont, #job-info-lead-info-cont, #job-info-salary-cont, #job-info-location-cont {
     display: flex;
     flex-direction: column;
     justify-content: center;
