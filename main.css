@@ -90,7 +90,6 @@ body {
     display: flex;
     width: 150px;
     height: 150px;
-    border-bottom: 1px solid #6D7E96;
 }
 
 #side-nav-menu, #side-nav-admin, #side-nav-categories {
@@ -399,7 +398,7 @@ input[type=checkbox]:checked {}
     height: 195px;
     width: 390px;
     margin: 10px;
-    background-image: url('images/IoeR4.png');
+    background-image: url('images/687474703a2f2f692e696d6775722e636f6d2f53634a6b734b682e706e67.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
