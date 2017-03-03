@@ -1,16 +1,16 @@
 * {
   box-sizing: border-box;
   font-weight: 200;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 body {
     height: 100vh;
     width: 100vw;
     background-color: #EDF2F6;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
-#page-container {
+.page-container {
   display: flex;
   flex-direction: row;
   max-width: 1600px;
@@ -399,7 +399,7 @@ input[type=checkbox]:hover {
 
 #bar-graph {
     height: 195px;
-    width: 290px;
+    width: 258px;
     margin: 10px;
     background-image: url('images/687474703a2f2f692e696d6775722e636f6d2f53634a6b734b682e706e67.png');
     background-repeat: no-repeat;
