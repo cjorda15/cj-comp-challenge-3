@@ -1,0 +1,22 @@
+
+body{
+  background-color:lightyellow;
+}
+
+.game-title{
+  text-align: center;
+
+}
+
+#game{
+  display: block;
+  margin: 0px auto;
+  border:1px black solid;
+}
+
+.game-menu{
+  display: flex;
+  margin: 25px 33%;
+  width: 340px;
+justify-content: space-between;
+}
