@@ -1,0 +1,3 @@
+# cj-comp-challenge-3
+
+css challenge on creating a modern layout, one of my first attempted dummy layout 
